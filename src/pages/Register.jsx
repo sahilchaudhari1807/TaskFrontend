@@ -18,8 +18,8 @@ const Register = () => {
     if (!form.name || !form.email || !form.password) {
       return setError("All fields are required");
     }
-    if (form.password.length < 6) {
-      return setError("Password must be at least 6 characters");
+    if (form.password.length < 8) {
+      return setError("Password must be at least 8 characters");
     }
 
     try {

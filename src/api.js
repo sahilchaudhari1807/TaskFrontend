@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // backend base URL
+  baseURL: "https://task-backend-1x3p.vercel.app/api", // Backend deployed URL
 });
 
 api.interceptors.request.use((config) => {
